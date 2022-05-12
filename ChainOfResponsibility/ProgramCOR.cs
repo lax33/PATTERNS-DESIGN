@@ -2,7 +2,7 @@
 
 namespace ChainOfResponsibility
 {
-    internal class Program
+    internal class ProgramCOR
     {
         static void Main(string[] args)
         {
