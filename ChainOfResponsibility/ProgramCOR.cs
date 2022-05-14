@@ -12,7 +12,7 @@ namespace ChainOfResponsibility
             var dog = new DogHandler();
 
             monkey.SetNext(squirrel).SetNext(dog);
-
+            monkey.Handle("Banana");
             // Клиент должен иметь возможность отправлять запрос любому
             // обработчику, а не только первому в цепочке.
             Console.WriteLine("Chain: Monkey > Squirrel > Dog\n");
@@ -21,6 +21,8 @@ namespace ChainOfResponsibility
 
             Console.WriteLine("Subchain: Squirrel > Dog\n");
             Client.ClientCode(squirrel);
+
+            Console.ReadLine();
         }
     }
 }
