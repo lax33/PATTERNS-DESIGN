@@ -4,7 +4,7 @@
     {
         // Продукт B способен работать самостоятельно...
         string UsefulFunctionB();
-        
+
     }
 
     internal class ConcreteProductB1 : IAbstractProductB

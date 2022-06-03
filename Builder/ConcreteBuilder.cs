@@ -1,6 +1,6 @@
 ﻿namespace Builder
 {
-    public class ConcreteBuilder:IBuilder
+    public class ConcreteBuilder : IBuilder
     {
         private Product _product;// = new Product();
 

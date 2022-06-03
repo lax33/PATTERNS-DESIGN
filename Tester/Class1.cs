@@ -6,7 +6,7 @@
 
         public Class1 Metod(Class1 abc)
         {
-            value=abc;
+            value = abc;
             return abc;
         }
     }

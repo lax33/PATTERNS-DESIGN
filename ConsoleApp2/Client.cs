@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace AbstractFactory
 {
@@ -15,7 +11,7 @@ namespace AbstractFactory
             // Клиентский код может работать с любым конкретным классом фабрики.
             Console.WriteLine("Client: Testing client code with the first factory type...");
             return ClientMethod_A(new ConcreteFactory1());
-            
+
             Console.WriteLine();
         }
         public string Prod_B1()
@@ -49,11 +45,11 @@ namespace AbstractFactory
         //--------------------------------------------------------------
         private string ClientMethod_A(IAbstractFactory factory)
         {
-           var productA = factory.CreateProductA().UsefulFunctionA();
-           return productA;
+            var productA = factory.CreateProductA().UsefulFunctionA();
+            return productA;
 
-           //Console.WriteLine(productB.UsefulFunctionB());
-           //Console.WriteLine(productB.AnotherUsefulFunctionB(productA));
+            //Console.WriteLine(productB.UsefulFunctionB());
+            //Console.WriteLine(productB.AnotherUsefulFunctionB(productA));
         }
 
         private string ClientMethod_B(IAbstractFactory factory)
